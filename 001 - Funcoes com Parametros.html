@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções com Parâmetros</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Funções com Parâmetros</h1>
+        <p>
+            ...
+        </p>
+
+    </div>
+
+
+
+    <script>
+        var pessoa1 = ['Flávio', 1977]
+        var pessoa2 = ['Joaquim', 1996]
+        var pessoa3 = ['Barney', 1976]
+        var i = 0
+
+        const dataAtual = new Date();
+        const anoAtual = dataAtual.getFullYear();
+
+        function mostra(frase) {
+            document.write(frase);
+        }
+
+        function writeText() {
+            mostra(pessoa1[0] + " tem " + (anoAtual - pessoa1[1]) + " anos." + "<br>");
+            mostra(pessoa2[0] + " tem " + (anoAtual - pessoa2[1]) + " anos." + "<br>");
+            mostra(pessoa3[0] + " tem " + (anoAtual - pessoa3[1]) + " anos.");
+        }
+
+        writeText();
+    </script>
+
+</body>
+
+</html>
